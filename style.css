@@ -100,7 +100,14 @@ p {
 	margin-top: 30px;
 	font-size: 12px;
 }
-
+.foo > a {
+	color: #fff;
+}
+.foo > a:hover, .foo > a:focus {
+	color: #1abc9c !important;
+	text-decoration: none;
+	border-color: #fff;
+}
 
 
 
