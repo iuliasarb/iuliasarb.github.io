@@ -1,0 +1,153 @@
+<div id="skillContainer">
+
+  <div class="skillBar">
+    <div class="skill75 start"> 
+      <span class="skillArea ">HTML5</span>
+      <span class="percentText ">75%</span>
+    </div>
+  </div>
+  
+  <div class="skillBar">
+    <div class="skill75">
+      <span class="skillArea ">CSS3</span>
+      <span class="percentText ">75%</span>
+    </div>
+  </div>
+
+    <div class="skillBar">
+    <div class="skill50">
+      <span class="skillArea ">SASS</span>
+      <span class="percentText ">50%</span>
+    </div>
+  </div>
+  
+  <div class="skillBar">
+    <div class="skill50">
+      <span class="skillArea ">Javascript</span>
+      <span class="percentText ">50%</span>
+    </div>
+  </div>
+
+  <div class="skillBar">
+    <div class="skill75">
+      <span class="skillArea ">Photoshop | Illustrator | InDesign</span>
+      <span class="percentText ">75%</span>
+    </div>
+  </div>
+
+  <div class="skillBar">
+    <div class="skill25">
+      <span class="skillArea ">jQuery</span>
+      <span class="percentText ">25%</span>
+    </div>
+  </div>
+
+  <div class="skillBar">
+    <div class="skill25">
+      <span class="skillArea ">npm | api | git</span>
+      <span class="percentText ">25%</span>
+    </div>
+  </div>
+
+
+
+
+
+  
+#skillContainer {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 10px; 
+}
+
+.skillBar:hover {
+  /* Toggle our animation play state to running when we are hovering over our sticker */
+  animation-play-state: running;
+  -webkit-animation-play-state:running;
+  background-color: red;
+}
+
+.skillBar {
+    width: 90%;
+    height: 26px;
+    position: relative;
+    //background: rgba(10, 10, 10, .05);
+    border-right: 1px solid lightgrey;
+    margin: 20px auto;
+}
+.skill25 {
+    animation: twentyf 5s;
+    -webkit-animation: twentyf 5s;
+    -moz-animation: twentyf 5s;
+    -o-animation: twentyf 5s;
+    width: 30%;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    background-color: grey;
+    
+}
+@keyframes twentyf {from {width: 20%;} to {width: 30%}}
+@-webkit-keyframes twentyf {from {width: 20%;} to {width: 30%}}
+@-moz-keyframes twentyf {from {width: 20%;} to {width: 30%}}
+@-o-keyframes twentyf {from {width: 20%;} to {width: 30%}}
+
+.skill50 {
+    animation: fifthy 5s;
+    -webkit-animation: fifthy 5s;
+    -moz-animation: fifthy 5s;
+    -o-animation: fifthy 5s;
+    width: 55%;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    background-color: grey;
+      animation-play-state: paused; 
+      -webkit-animation-play-state:paused;
+}
+@keyframes  fifthy {from {width: 20%;} to {width: 55%}}
+@-webkit-keyframes  fifthy {from {width: 20%;} to {width: 55%}}
+@-moz-keyframes  fifthy {from {width: 20%;} to {width: 55%}}
+@-o-keyframes  fifthy {from {width: 20%;} to {width: 55%}}
+
+.skill75 {
+    animation: seventyf 5s;
+    -webkit-animation: seventyf 5s;
+    -moz-animation: seventyf 5s;
+    -o-animation: seventyf 5s;
+    width: 80%;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    background-color: grey;
+      animation-play-state: paused; 
+}
+@keyframes seventyf {from {width: 20%;} to {width: 80%}}
+@-webkit-keyframes seventyf {from {width: 20%;} to {width: 80%}}
+@-moz-keyframes seventyf {from {width: 20%;} to {width: 80%}}
+@-o-keyframes seventyf {from {width: 20%;} to {width: 80%}}
+
+
+
+
+.skillArea {
+    z-index: 1;
+    float: left;
+    //margin-top: 15px;
+    margin-left: 15px;
+    color: #fff;
+    font-size: 16px;
+}
+.percentText {
+    z-index: 3;
+    //position: relative;
+    padding-right: 15px;
+    //margin-top: 15px;
+    float: right;
+    text-shadow: none;
+    color: #fff;
+    font-size: 16px;
+}
+
