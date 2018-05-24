@@ -76,6 +76,8 @@ $(function() {
       bar5.style['animationPlayState'] = 'inherit';
       bar6.style['animationPlayState'] = 'inherit';
     };
+    //stackoverflow
+    $('.bg-3').bind('touchstart', function() {});
 
 
 
