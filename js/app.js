@@ -68,7 +68,17 @@ $(function() {
     var bar6 = document.querySelector('.bar6');
     bar6.firstChild.nextSibling.innerHTML = bar6.dataset.percent;
 
-    contain.onmouseenter = function(){
+
+
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+  bar1.style['animationPlayState'] = 'inherit';
+      bar2.style['animationPlayState'] = 'inherit';
+      bar3.style['animationPlayState'] = 'inherit';
+      bar4.style['animationPlayState'] = 'inherit';
+      bar5.style['animationPlayState'] = 'inherit';
+      bar6.style['animationPlayState'] = 'inherit';
+} else {
+      contain.onmouseenter = function(){
       bar1.style['animationPlayState'] = 'inherit';
       bar2.style['animationPlayState'] = 'inherit';
       bar3.style['animationPlayState'] = 'inherit';
@@ -76,15 +86,7 @@ $(function() {
       bar5.style['animationPlayState'] = 'inherit';
       bar6.style['animationPlayState'] = 'inherit';
     };
-
-    contain.addEventListener('touchstart', function(){
-          bar1.style['animationPlayState'] = 'inherit';
-          bar2.style['animationPlayState'] = 'inherit';
-          bar3.style['animationPlayState'] = 'inherit';
-          bar4.style['animationPlayState'] = 'inherit';
-          bar5.style['animationPlayState'] = 'inherit';
-          bar6.style['animationPlayState'] = 'inherit';
-    }, false)
+}
 
 
 
