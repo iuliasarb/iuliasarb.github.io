@@ -77,16 +77,13 @@ $(function() {
       bar6.style['animationPlayState'] = 'inherit';
     };
 
-    contain.addEventListener('touchstart', function(e){
-        var touchobj = e.changedTouches[0] // reference first touch point (ie: first finger)
-        startx = parseInt(touchobj.clientX) // get x position of touch point relative to left edge of browser
+    contain.addEventListener('touchstart', function(){
           bar1.style['animationPlayState'] = 'inherit';
           bar2.style['animationPlayState'] = 'inherit';
           bar3.style['animationPlayState'] = 'inherit';
           bar4.style['animationPlayState'] = 'inherit';
           bar5.style['animationPlayState'] = 'inherit';
           bar6.style['animationPlayState'] = 'inherit';
-        e.preventDefault()
     }, false)
 
 
